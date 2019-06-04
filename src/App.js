@@ -13,7 +13,7 @@ const App = () => {
       <div className="app">
         <Header setMobileList={changeMobileList}/>
         <div className='app-top'></div>
-          { mobileList ? [<ContentList setMobileList={changeMobileList}/>,<div className='topdownMenu '/>] : null}
+        { mobileList ? [<ContentList setMobileList={changeMobileList}/>,<div className='topdownMenu '/>] : null}
         <Route exact path='/' component={Home} />
         <Route path='/projects' component={ Projects } />
         <Route path='/study' component={ Study } />
