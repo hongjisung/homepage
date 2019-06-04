@@ -1,0 +1,31 @@
+@import './app.css';
+
+@keyframes TopdownMenu {
+  from {
+    transform: translateY(-200px);
+    height: 0px;
+  }
+  to {
+    transform: translateY(-50px);
+    height: 150px;
+  }
+}
+
+.topdownMenu {
+  animation-name: TopdownMenu;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  width: 100%;
+}
+
+.topdownMenu.fixed{
+  margin-top: var(--header-height);
+  position: fixed;
+  z-index: 5;
+}
+
+@media (min-width: 600px){
+  .topdownMenu {
+    display: none;
+  }
+}

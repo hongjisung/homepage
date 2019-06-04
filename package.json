@@ -2,7 +2,11 @@
   "name": "site",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/hongjisung/hongjisung.github.io",
+  "author": {
+    "name": "Jisung Hong",
+    "email": "rhfktj@gmail.com"
+  },
+  "homepage": "https://hongjisung.github.io/homepage",
   "dependencies": {
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
@@ -15,7 +19,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "react-scripts build && gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -31,5 +36,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^2.0.1"
   }
 }

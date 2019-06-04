@@ -1,8 +1,14 @@
+:root {
+  --header-height: 50px;
+  --reactive-width: 600px;
+}
+
 .app {
+  width: 100vw;
   display: flex;
   flex-direction: column;
 }
 
 .app-top {
-  margin-top: 50px;
+  margin-top: var(--header-height);
 }
