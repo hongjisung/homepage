@@ -1,12 +1,12 @@
 import React from 'react';
-import ReactMarkdown from 'react-markdown';
+import { Markdown } from '../components';
 
-const markdown = `## &nbsp;&nbsp;My Projects
-`;
+const Body = () =>
+  <Markdown name='projects' />
 
 const Projects = () =>
-  <div>
-    <ReactMarkdown source={markdown}/>
-  </div>
+  <main>
+    <Body />
+  </main>
 
 export default Projects;

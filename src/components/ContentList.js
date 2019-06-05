@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
+import { LinkTo } from './utils';
 import '../css/ani.css';
 
 const Content = styled.div`
@@ -17,21 +18,16 @@ const Content = styled.div`
   border-bottom: 1px solid #585858;
 `;
 
-const LinkTo = (props) =>
-  <Link exact to={props.path} onClick={props.setMobileList} style={{ padding: "0px 20px", textDecoration: 'none', color: "black" }}>
-    { props.children }
-  </Link>
-
 const ContentList = ({setMobileList}) =>
   <div className='topdownMenu fixed'>
     <Content top="50px">
-      <LinkTo path='/projects' setMobileList={setMobileList}>Projects</LinkTo>
+      <LinkTo path='/projects' color='black' setMobileList={setMobileList} padding="0px 20px">Projects</LinkTo>
     </Content>
     <Content top="100px">
-        <LinkTo path='/study' setMobileList={setMobileList}>Study</LinkTo>
+        <LinkTo path='/study' color='black' setMobileList={setMobileList} padding="0px 20px">Study</LinkTo>
     </Content>
     <Content top="150px">
-        <LinkTo path='/interest' setMobileList={setMobileList}>Interest</LinkTo>
+        <LinkTo path='/interest' color='black' setMobileList={setMobileList} padding="0px 20px">Interest</LinkTo>
     </Content>
   </div>
 

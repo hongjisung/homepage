@@ -1,0 +1,13 @@
+.md {
+  margin: 0 10px;
+}
+
+div.md ul {
+  list-style: none;
+  padding: 0 0 0 20px;
+}
+
+div.md a {
+  text-decoration: none;
+  color: #585858;
+}

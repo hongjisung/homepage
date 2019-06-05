@@ -1,7 +1,10 @@
 import React from 'react';
-import { Main } from '../components'
+import { Markdown } from '../components'
+
+const Body = () =>
+  <Markdown name='home' />
 
 const Home = () =>
-  <Main />
+  <Body />
 
 export default Home;

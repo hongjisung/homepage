@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { LinkTo } from './utils';
 import '../css/header.css';
 
 const HeaderButton = ({setMobileList}) => 
@@ -8,11 +8,6 @@ const HeaderButton = ({setMobileList}) =>
     <div className='header-smallbar' />
     <div className='header-smallbar' />
   </button>
-
-const LinkTo = (props) =>
-  <Link exact to={props.path} style={{ textDecoration: 'none', color: "white" }}>
-    { props.children }
-  </Link>
 
 const HeaderList = () =>
   <ul className='header-list'>
@@ -32,11 +27,11 @@ const HeaderList = () =>
     </li>
   </ul>
   
-const Header = ({setMobileList}) =>
+const Header = ({setMobileList, setMLfalse}) =>
   <header className='header-main'>
     <HeaderButton setMobileList={setMobileList}/>
     <div className='header-text'>
-      <LinkTo path='/'>Jisung</LinkTo>
+      <LinkTo path='/' setMobileList={setMLfalse}>Jisung</LinkTo>
     </div>
     <HeaderList />
     <div className='header-button img'>

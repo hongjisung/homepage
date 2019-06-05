@@ -11,13 +11,15 @@ const App = () => {
   return (
     <Router>
       <div className="app">
-        <Header setMobileList={changeMobileList}/>
+        <Header setMobileList={changeMobileList} setMLfalse={()=> setMobileList(false)}/>
         <div className='app-top'></div>
         { mobileList ? [<ContentList setMobileList={changeMobileList}/>,<div className='topdownMenu '/>] : null}
-        <Route exact path='/' component={Home} />
-        <Route path='/projects' component={ Projects } />
-        <Route path='/study' component={ Study } />
-        <Route path='/interest' component={ Interest } />
+        <div className="app-body">
+          <Route exact path='/' component={Home} />
+          <Route path='/projects' component={ Projects } />
+          <Route path='/study' component={ Study } />
+          <Route path='/interest' component={ Interest } />
+        </div>
       </div>
     </Router>
   );

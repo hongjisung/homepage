@@ -1,12 +1,20 @@
 import React from 'react';
-import ReactMarkdown from 'react-markdown';
+import {Route} from 'react-router-dom';
+import { StudyBar, Markdown } from '../components';
+import { Algorithm } from './study';
+import '../css/app.css'
 
-const markdown = `## &nbsp;&nbsp;My Study
-`;
+const Body = () =>
+  <Markdown name='study' />
 
-const Study = () =>
-  <div>
-  <ReactMarkdown source={markdown}/>
-  </div>
+const Study = () => {
+  return (
+    <main className='app'>
+      <StudyBar />
+      <Route exact path='/study/' component={ Body } />
+      <Route path='/study/algorithm' component={ Algorithm }/>
+    </main>
+  )
+}
 
 export default Study;
