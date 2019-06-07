@@ -4,7 +4,6 @@
   display: flex;
   align-items: center;
   flex-direction: row;
-  border-top: 1px solid #585858;
   border-bottom: 1px solid #585858;
 }
 
