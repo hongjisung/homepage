@@ -1,13 +1,18 @@
 import React from 'react';
-import '../css/main.css';
 import ReactMarkdown from 'react-markdown';
+import '../css/markdown.css'
 
-const mainMarkdown = `## &nbsp;&nbsp;Jisung Hong(홍지성)
+const mainMarkdown = `##
+Jisung Hong(홍지성)
+- rhfktj@gmail.com
+
+## Eduation
+- Study computer science, korea university (2013~)
 `;
 
 const Main = () =>
-  <main className="main-main">
+  <div className="md">
     <ReactMarkdown source={mainMarkdown}/>
-  </main>
+  </div>
 
 export default Main;

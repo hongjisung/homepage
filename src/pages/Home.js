@@ -1,5 +1,5 @@
 import React from 'react';
-import { Markdown } from '../components'
+import { Main, Markdown } from '../components'
 
 const Body = () =>
   <Markdown name='home' />
