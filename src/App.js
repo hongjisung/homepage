@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { HashRouter as Router, Route } from 'react-router-dom';
-import { Header, ContentList } from './components';
+import { Header, Footer, ContentList, ScrollToTop } from './components';
 import { Home, Projects, Study, Interest } from './pages'
 import './css/app.css';
 import './css/ani.css';
@@ -9,7 +9,8 @@ const App = () => {
   const [mobileList, setMobileList] = useState(false);
   const changeMobileList = () => setMobileList(!mobileList);
   return (
-    <Router>
+    <Router onChange={() => window.scrollTo(0,0)}>
+      <ScrollToTop>
       <div className="app">
         <Header setMobileList={changeMobileList} setMLfalse={()=> setMobileList(false)}/>
         <div className='app-top'></div>
@@ -20,7 +21,9 @@ const App = () => {
           <Route path='/study' component={ Study } />
           <Route path='/interest' component={ Interest } />
         </div>
+        <Footer />
       </div>
+      </ScrollToTop>
     </Router>
   );
 }

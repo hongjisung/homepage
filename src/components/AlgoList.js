@@ -7,10 +7,10 @@ const liststyle = {
   display: 'flex',
   flexDirection: 'row',
   alignItems: 'center',
-  height: '30px',
-  color: 'grey',
+  height: '35px',
+  color: '#9eabb3',
   padding: '0px 15px',
-  borderBottom: '0.5px solid gainsboro',
+  borderTop: '0.5px solid gainsboro',
 }
 
 const getList = (algoMdFiles, pagenum, shownum, setNum) => {
@@ -24,11 +24,11 @@ const getList = (algoMdFiles, pagenum, shownum, setNum) => {
   return files.map( num =>
     <div style = {{
       ...liststyle,
-      color: (shownum === num ? '#585858': 'grey')
+      color: (shownum === num ? '#585858': '#9eabb3')
     }} onClick = {() => setNum(num)}>
       <LinkTo
         path = {'/study/algorithm/' + num.toString()}
-        color= {(shownum === num ? '#585858': 'grey')}
+        color= {(shownum === num ? '#585858': '#9eabb3')}
       >
         { num.toString() + '. ' + algoMdFiles[num] }
       </LinkTo>
@@ -52,7 +52,7 @@ const pageNums = (algoMdFiles, pagenum, setPagenum) => {
     <div style = {{
       width: '40px',
       fontSize: '15px',
-      color: (pagenum === num ? '#585858' : 'grey'),
+      color: (pagenum === num ? '#585858' : '#9eabb3'),
       cursor: 'pointer'
     }} onClick = {() => setPagenum(num)}>
       ({num + 1})

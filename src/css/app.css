@@ -16,6 +16,10 @@
   margin-top: var(--header-height);
 }
 
+.app-body {
+  min-height: 700px;
+}
+
 @media (min-width: 900px) {
   .app-body {
     width: 900px;

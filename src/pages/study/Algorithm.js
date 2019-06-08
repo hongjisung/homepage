@@ -31,9 +31,8 @@ const Algorithm = () => {
         require('../../markdowns/algorithm/' + num.toString() + '.md')
       } />
       { pagelist }
-      <div style={{ height: '30px'}} />
+      <div style={{ height: '50px'}} />
       <AlgoList algoMdFiles={ algoMdFiles } num = { num } setNum = { setNum }/>
-      <div style={{ height: '60px'}} /> 
     </div>
   )
 }

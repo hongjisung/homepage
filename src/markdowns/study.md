@@ -1,6 +1,5 @@
-## My Study List
+## My Study
 
-### Algorithm
-- [problem list](https://github.com/hongjisung/algorithmsolve)
+### Algorithm [github](https://github.com/hongjisung/algorithmsolve)
 
 ### Graphic
