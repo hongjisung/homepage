@@ -1,10 +1,12 @@
+@import './app.css';
+
 .sb {
   height: 40px;
   width: 100%;
   display: flex;
   align-items: center;
   flex-direction: row;
-  border-bottom: 1px solid #585858;
+  border-bottom: 1px solid var(--main-color);
 }
 
 header.sb ul {

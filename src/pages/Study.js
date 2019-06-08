@@ -5,7 +5,7 @@ import { Algorithm } from './study';
 import '../css/app.css'
 
 const Body = () =>
-  <Markdown name='study' />
+  <Markdown mdfile={ require('../markdowns/study.md')} />
 
 const Study = () => {
   return (

@@ -1,6 +1,7 @@
 :root {
   --header-height: 50px;
   --reactive-width: 600px;
+  --main-color: #585858;
 }
 
 .app {

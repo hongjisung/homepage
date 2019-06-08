@@ -22,7 +22,7 @@
 
 .header-main {
   position: fixed;
-  background-color: #585858;
+  background-color: var(--main-color);
   height: var(--header-height);
   width: 100%;
   font-size: 20px;

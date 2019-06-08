@@ -2,8 +2,8 @@ import React from 'react';
 import ReactMarkdown from 'react-markdown';
 import '../css/markdown.css'
 
-const mainMarkdown = `##
-Jisung Hong(홍지성)
+const mainMarkdown = `
+## Jisung Hong(홍지성)
 - rhfktj@gmail.com
 
 ## Eduation
